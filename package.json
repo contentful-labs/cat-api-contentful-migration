@@ -1,0 +1,19 @@
+{
+  "name": "new-cat-mig",
+  "version": "1.0.0",
+  "description": "Migrate cat breed data from The Cat API into a Contentful space",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "create-model": "node src/createContentModel.js",
+    "migrate": "node src/migrateData.js"
+  },
+  "dependencies": {
+    "contentful-management": "^12.8.0",
+    "dotenv": "^17.4.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
